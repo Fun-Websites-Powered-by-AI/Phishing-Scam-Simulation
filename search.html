@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Google</title>
+  <title>yelgooG</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     #search-results {
@@ -23,12 +23,12 @@
 </head>
 <body>
   <div class="container">
-    <h1 style="color: #4285f4;">Google</h1>
+    <h1 style="color: #4285f4;">yelgooG</h1>
     <input type="text" id="searchBar" placeholder="Search Google or type a URL" />
     <button onclick="runSearch()">Search</button>
-    <div id="instruction"><p><em>Hint: try searching <strong>gmail.com</strong></em></p></div>
+    <div id="instruction"><p><em>Hint: try searching <strong>emailg.com</strong></em></p></div>
     <div id="search-results">
-      <div class="result" onclick="goToGmail()">Gmail - Google</div>
+      <div class="result" onclick="goToGmail()">Emailg</div>
     </div>
   </div>
 
@@ -37,11 +37,11 @@
       const input = document.getElementById('searchBar').value.trim().toLowerCase();
       const results = document.getElementById('search-results');
 
-      if (input.includes('gmail')) {
+      if (input.includes('emailg')) {
         results.style.display = 'block';
       } else {
         results.style.display = 'none';
-        alert('No results found. Try typing "gmail.com"');
+        alert('No results found. Try typing "emailg.com"');
       }
     }
 

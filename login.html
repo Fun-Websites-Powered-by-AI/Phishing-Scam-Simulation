@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign in – Google Accounts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Sign in</h1>
+    <p>to continue to Google</p>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Email or phone" required /><br />
+      <input type="password" id="password" placeholder="Enter a password" required /><br />
+      <button type="submit">Next</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      sessionStorage.setItem('fakeUsername', username);
+      sessionStorage.setItem('fakePassword', password);
+      window.location.href = 'search.html';
+    });
+  </script>
+</body>
+</html>

@@ -39,10 +39,11 @@ button {
 .doc-preview {
   display: flex;
   align-items: center;
-  background: #f3f3f3;
+  background: #ffffff;
   padding: 10px;
   border-radius: 10px;
   margin: 20px 0;
+  border: 1px solid #000;
 }
 
 .tooltip {
